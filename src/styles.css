@@ -26,6 +26,7 @@ header {
   align-items: center;
   width: 80%;
   margin: auto;
+  gap: 1rem;
 }
 
 .header h1 {
@@ -127,4 +128,16 @@ footer a:hover {
     opacity: 0.8;
     scale: 1.1;
     transition: all 0.5s;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section-1 {
+        flex-direction: column;
+    }
 }
