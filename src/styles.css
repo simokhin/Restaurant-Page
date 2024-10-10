@@ -1,3 +1,86 @@
-body {
-    background-color: yellowgreen;
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+
+:root {
+  --background: #f8f5e1;
+  --main: #5b2333;
+  --accent: #d4af37;
+  --text: #333333;
+}
+
+html {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  background-color: var(--background);
+}
+
+header {
+    background-color: var(--background);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.5rem solid var(--main);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.header h1 {
+    color: var(--main);
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav button {
+    background-color: var(--accent);
+    color: var(--main);
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+}
+
+nav button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+}
+
+.section-1 {
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.image {
+    flex-basis: 50%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.image img {
+    border-radius: 2rem;
+}
+
+.text {
+    flex-basis: 50%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--text);
+    font-size: 1rem;
 }
