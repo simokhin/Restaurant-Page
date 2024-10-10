@@ -1,6 +1,6 @@
-import restImage from "../img/1.jpg";
+import restImage from "../img/2.jpg";
 
-export function homePage() {
+export function aboutPage() {
     const content = document.querySelector(".content");
 
     const section1 = document.createElement("div");
@@ -22,14 +22,11 @@ export function homePage() {
     section1.appendChild(text);
 
     const para1 = document.createElement("p");
-    para1.textContent = "At [Restaurant Name], we bring you an unforgettable dining experience, where flavors from around the world meet a cozy, inviting atmosphere. Our menu is crafted with the freshest ingredients, designed to satisfy your cravings, whether you're here for a light bite or a full-course meal.";
+    para1.textContent = "At [Restaurant Name], we believe that dining is more than just a meal—it’s an experience. With a passion for fresh, locally sourced ingredients and a menu crafted to delight every palate, we aim to offer our guests both comfort and elegance. Whether you’re here for a casual dinner or a special occasion, we’re dedicated to providing warm hospitality and unforgettable flavors in a beautiful setting.";
     
     const para2 = document.createElement("p");
-    para2.textContent = "Come, indulge in great food, warm hospitality, and a relaxing";
+    para2.textContent = "Join us and experience the taste of true culinary artistry.";
+    para2.style.fontWeight = "bold";
 
-    const para3 = document.createElement("p");
-    para3.textContent = "Taste the difference at [Restaurant Name] today!";
-    para3.style.fontWeight = "bold";
-
-    text.append(para1, para2, para3);
+    text.append(para1, para2);
 }
